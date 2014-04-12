@@ -1,78 +1,139 @@
 h1,
+h2,
 a,
-p,
-h3 {
+h3,
+h4,
+#scroll,
+.tagline,
+#about
+{
 	font-family: 'Oswald';
 	font-weight: 300;
 }
-.nav {
-	margin-top: 40px;
+p,
+.info
+{
+	font-family: 'Open Sans';
 }
-
-ul {
+div.links {
+	height: 300px;
+	margin-top: -150px;
+	position: relative;
+	top: 50%;
+}
+div.links> ul {
 	-webkit-padding-start: 0;
 	width: auto;
 	margin: auto;
 	text-align: center;
 }
-
-ul > li {
+div.links > ul > li {
 	text-decoration: none;
 	list-style: none;
 	display: inline-block;
 	margin-left: 60px;
-	vertical-align: bottom;
+	vertical-align: middle;
 }
-
-.container {
-	margin: 0;
-	padding: 0;
-	width: 100%;
+div.links > ul > li:first-child {
+	margin-left: 0px;
 }
-
-.nav > ul > li > a {
+div.links > ul > li > a {
 	display: inline-block;
 	text-transform: uppercase;
+	padding: 2px 0px;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
 	letter-spacing: 2px;
-	color: #ccc;
-	line-height: 1.2;
+	color: #fff;
+	line-height: 1.4;
 }
 
+a  {
+	color: #000;
+}
+
+.navbar-nav {
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+}
+
+.navbar-fixed-top {
+	top: 30px;
+	-webkit-transition: all 4s ease-in-out;
+	  -moz-transition: all 1s ease-in-out;
+	  -o-transition: all 1s ease-in-out;
+	  transition: all 1s ease-in-out;
+}
+
+.navbar-nav > li {
+	margin: 0 15px;
+	vertical-align: middle;
+	height: 50px;
+}
+.navbar-nav .logo {
+	height: 100px;
+	position: relative;
+	margin-top: -25px;
+	top: 0%;
+	width: 165px;
+	background: url('../images/newlogo.png') no-repeat;
+	background-size: contain;
+	border: none;
+
+}
+.navbar-nav > li > a {
+	text-transform: uppercase;
+	padding: 2px 0px;
+	text-decoration: overline underline;
+	letter-spacing: 2px;
+	color: #000;
+	line-height: 50px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background-color: transparent;
+	color: #FFB03B;
+}
+.container {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.container-fluid {
+	width: 100%;
+	display: block;
+	position: relative;
+	padding: 0;
+	text-align: center;
+}
 .tagline {
-	font-family: 'Oswald';
 	font-size: 24px;
 	text-transform: uppercase;
 	margin-top: 15px;
+	color: #FFB03B;
 }
-
 .info {
-	margin-top: 15px;
+	background: url('../images/wood.jpg') repeat-x;
 	text-align: center;
-	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Open Sans';
 	font-size: 18px;
 	font-weight: 300;
+	color: #fff;
 }
-#stand-out, #about {
-	width: 100%;
-	display: block;
-	position: relative;
-	margin-top: 30px;
-	padding: 0;
-	text-align: center;
+.center {
+	display: inline-block;
+	margin: auto;
 }
-
 #scroll {
 	font-size: 20px;
 	margin-top: 40px;
-	font-family: 'Oswald';
 	text-align: center;	
 }
 
 h2 {
-	font-family: 'Oswald';
 	color: #231f20 ;
 	font-size: 60px;
 	text-transform: uppercase;
@@ -81,7 +142,6 @@ h2 {
 
 p {
 	color: #000;
-	font-family: 'Open Sans';
 	font-size: 18px;
 	line-height: 30px;
 	padding: 10px;
@@ -92,10 +152,6 @@ h3, h4 {
 	margin: 20px auto;
 	line-height: 35px;
 	text-transform: uppercase;
-	font-family: 'Oswald';
-}
-
-h3, h4, a {
 	color: #231f20;
 }
 
@@ -116,78 +172,106 @@ button {
 	font-size: 1em;
 	background-color: transparent;
 	border-color: #000;
-	color: #000;
+	color:#FFB03B;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	text-transform: uppercase;
 }
 
-button:hover, button a:hover{
-	color:#000;
+button:hover, button > a:hover{
+	color:#FFB03B;
 	background-color: #fff5ee;
 	text-decoration: none;
 	display: inline-block;
 	text-align: center;
 }
 
-.profile, .avatars {
-	width: 33%;
+.profile {
 	display: inline-block;
 	margin: auto;
+	width: 100%;
 	vertical-align: top;
+	text-align: left;	
 }
-.avatars {
-	margin-top: 60px;
-}
-#charlotte {
-	text-align: left;
-}
-
-#noorain {
-	text-align: right;
-	float: right;
-}
-
 .avatar {
 	display: inline-block;
 }
 
 .avatar img {
-	border: 3px solid #ccc;
+	border: 3px solid #000;
 	border-radius: 50%;
 }
-#about {
-	height: auto;
-	text-align: center;
-	background: url('../images/green_dust.png') repeat-x;
-}
 
-.box {
-	width: 0;
-	height: 0;
-	border: 150px solid transparent;
-	border-bottom-color: #eee;
-	position: relative;
-	top: -150px;
+.bio {
 	display: inline-block;
-	margin-right: 20px;
+	color: #fff;
 }
 
-.box:after {
-	content: '';
-	position: absolute;
-	left: -150px;
-	top: 150px;
-	width: 0;
-	height: 0;
-	border: 150px solid transparent;
-	border-top-color: #eee;
+#about {
+	height: 500px;
+	position: relative;
 }
-
+#about:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    width: 100%;
+    height: 600px;
+    background: url('../images/toronto-skyline.jpg') no-repeat fixed;
+    background-size: cover	;
+    filter: blur(4px);
+    -o-filter:blur(4px);
+      -ms-filter:blur(4px);
+      -moz-filter:blur(4px);
+      -webkit-filter:blur(4px);
+      z-index: -1;
+      opacity: 0.4;
+ }
+ .content{
+ 	padding-top: 20px;
+ 	margin: 100px 50px 20px 50px;
+ 	background-color: rgba(138,95,32,0.2);
+ }
+ #team {
+ 	background-color: rgba(35,31,32,0.9);	
+ 	padding-top: 30px;
+ }
+ #team .content {
+ 	background: url('../images/background-content.png') no-repeat;
+ 	background-size: 100%;
+ 	margin: 0;
+ 	padding: 100px;
+ }
+ #team h4, #team p, #team h2, #team h3 {
+ 	color: #fff;
+ }
+ #noorain {
+ 	text-align: right;
+ }
+ #blurb {
+ 	margin-top: 30px;
+ }
+.box {
+	width: 200px;
+	height: 100px;
+	background-color: rgba(138,95,32,0.2);
+	float: left;
+	margin: 0px 15px;
+}
+.box-big {
+	border: 3px solid #468966;
+	margin:80px;
+}
 form {
 	text-align: center;
+	margin-bottom: 30px;
+	background-color: rgba(255,176,59,0.6);
+	padding: 20px;
 }
-
 form > input {
 	width: 300px;
 	margin-top: 10px;

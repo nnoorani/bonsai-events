@@ -11,26 +11,26 @@
 
 </head>
 <body>
-	<div class='container'>
-		<div class='container-fluid nav'>
-			<ul lass='row text-center col-md-8'>
-				<li><a href='#about'>About</a></li>
-				<li><a href='#clients'>Clients</a></li>
-				<li><img src='images/newlogo.png' width='400px'></img></li>
-				<li><a href='#contact'>Contact</a></li>
-				<li><a href='#blog'>Blog</a></li>
-				<hr/>
-			</ul>
-		</div>
-		<div class='row tagline text-center'>
-			Our mission: To help form a unified startup community by bringing people together. Literally.
-		</div>
 		<div class='container-fluid info'>
+			<div class='container'>
+				<div class='nav'>
+					<ul lass='row text-center col-md-8'>
+						<li><a href='#about'>About</a></li>
+						<li><a href='#clients'>Clients</a></li>
+						<li><img src='images/newlogo.png' width='400px'></img></li>
+						<li><a href='#contact'>Contact</a></li>
+						<li><a href='#blog'>Blog</a></li>
+						<hr/>
+					</ul>
+				</div>
+			<div class='row tagline text-center'>
+				Our mission: To help form a unified startup community by bringing people together. Literally.
+			</div>
 			<div class='col-md-4'>We want people to get to know you. Our events are intimate, so people can get to know your team and pick your thoughts. We will help you grow your brand by showing people just how much you care.</div>
 			<div class='col-md-4'>What makes your company different from the rest? Host an event that your customers wont forget. Who wouldn't want to meet the founder of their favourite product? Our events will fuel your growing list of brand advocates.</div>
 			<div class='col-md-4'>What makes your company different from the rest? Host an event that your customers wont forget. Who wouldn't want to meet the founder of their favourite product? Our events will fuel your growing list of brand advocates.</div>
+			<div id='scroll'><button>LEARN MORE</button></div>
 		</div>
-		<div id='scroll'><button>LEARN MORE</button></div>
 		<div class='container-fluid' id='about'>
 			<h2>What?</h2>
 			<h3>We throw events.</h3>
@@ -41,19 +41,20 @@
 		<div class='container-fluid'>
 			<h2>Who?</h2>
 			<div id='charlotte' class='profile'>
-				<h3 >Charlotte Chan</h3>
-				<h4>Co-founder. Hustler.</h4>
-				<p>Charlotte Chan is the woman for your team. She hustles hard and gets sh*t done. Engineering student, project manager, full-time CEO.</p>
-			</div>
-			<div class='avatars'>
 				<div class='avatar'><img src='images/charlotte.jpg' width='200' height='200'></img></div>
-				<div class='avatar'><img src='images/noorain.jpg' width='200' height='200'></img></div>
+				<div class='bio'>
+					<h3 >Charlotte Chan</h3>
+					<h4>Co-founder. Hustler.</h4>
+					<p>Charlotte Chan is the woman for your team. She hustles hard and gets sh*t done. Engineering student, project manager, full-time CEO.</p>
+				</div>
 			</div>
 			<div class='profile' id='noorain'>
-				
-				<h3 >Noorain Noorani</h3>
-				<h4>Co-founder. Designer.</h4>
-				<p>Noorain is the designer and developer behind Bonsai Events.</p>
+				<div class='avatar'><img src='images/noorain.jpg' width='200' height='200'></img></div>
+				<div class='bio'>
+					<h3>Noorain Noorani</h3>
+					<h4>Co-founder. Designer.</h4>
+					<p>Noorain is the designer and developer behind Bonsai Events.</p>
+				</div>
 			</div>
 
 		</div>
@@ -63,10 +64,22 @@
 			<div class='box'><h4>Sponsorships</h4></div>
 			<p><button><a href='#about'>Get a free consultation today</a></button></p>
 		</div>
-			<form>
-				<input></input></br>
-				<input></input></br>
-				<input type='submit'></input></br>
+			<form class='form-horizontal'>
+				<div class='form-group'>
+					<label for='inputEmail' class='col-sm-2 control-label'>Email</label>
+					<div class='col-sm-1'>
+						<input id='inputEmail' placeholder='me@bonsaievents.com    '>
+					</div>
+				</div>
+				<div class='form-group'>
+					<label for='inputMessage' class='col-sm-2 control-label'>Questions?</label>
+					<div class='col-sm-8'>
+						<textarea class='form-control' rows=3></textarea>
+					</div>
+				</div>
+				<div class='form-group'>
+					<div class='col-sm-offset-2 col-sm-8'>
+						<button type='submit' class='btn btn-default'>Submit</button>
 			</form>
 		
 	</div>
