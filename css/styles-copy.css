@@ -13,7 +13,54 @@ h4,
 p,
 .info
 {
+	color: #fff;
 	font-family: 'Open Sans';
+}
+a{
+	color: #000;
+}
+h2, h3, h4  {
+	color: #231f20 ;
+	text-transform: uppercase;
+}
+p {
+	color: #000;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 0px 10px;
+}
+button {
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	font-family: inherit;
+	font-weight: 400;
+	line-height: 1;
+	margin: 1em 0 1.25em;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	padding: 13px;
+	font-size: 1em;
+	background-color: transparent;
+	border-color: #ffb03b;
+	color:#FFB03B;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	text-transform: uppercase;
+}
+button:hover, button > a:hover{
+	color:#FFB03B;
+	background-color: #fff5ee;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+}
+li:hover, a:hover {
+	text-decoration: none;
+	color:#FFB03B;
 }
 div.links {
 	height: 300px;
@@ -47,26 +94,20 @@ div.links > ul > li > a {
 	color: #fff;
 	line-height: 1.4;
 }
-
-a  {
-	color: #000;
-}
-
 .navbar-nav {
 	float: none;
 	margin: 0 auto;
 	text-align: center;
 	display: inline-block;
 }
-
 .navbar-fixed-top {
 	top: 30px;
 	-webkit-transition: all 4s ease-in-out;
 	  -moz-transition: all 1s ease-in-out;
 	  -o-transition: all 1s ease-in-out;
 	  transition: all 1s ease-in-out;
+	 box-shadow: 2px 2px 2px #ccc;
 }
-
 .navbar-nav > li {
 	margin: 0 15px;
 	vertical-align: middle;
@@ -103,17 +144,10 @@ a  {
 .container-fluid {
 	width: 100%;
 	display: block;
-	position: relative;
 	padding: 0;
 	text-align: center;
 }
-.tagline {
-	font-size: 24px;
-	text-transform: uppercase;
-	margin-top: 15px;
-	color: #FFB03B;
-}
-.info {
+#home {
 	background: url('../images/wood.jpg') repeat-x;
 	text-align: center;
 	margin-left: auto;
@@ -132,60 +166,6 @@ a  {
 	margin-top: 40px;
 	text-align: center;	
 }
-
-h2 {
-	color: #231f20 ;
-	font-size: 60px;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-p {
-	color: #000;
-	font-size: 18px;
-	line-height: 30px;
-	padding: 10px;
-	padding-top: 0;
-}
-
-h3, h4 {
-	margin: 20px auto;
-	line-height: 35px;
-	text-transform: uppercase;
-	color: #231f20;
-}
-
-button {
-	margin: auto;
-	border-style: solid;
-	border-width: 1px;
-	cursor: pointer;
-	font-family: inherit;
-	font-weight: 400;
-	line-height: 1;
-	margin: 2em 0 1.25em;
-	position: relative;
-	text-decoration: none;
-	text-align: center;
-	display: inline-block;
-	padding: 13px;
-	font-size: 1em;
-	background-color: transparent;
-	border-color: #000;
-	color:#FFB03B;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
-	text-transform: uppercase;
-}
-
-button:hover, button > a:hover{
-	color:#FFB03B;
-	background-color: #fff5ee;
-	text-decoration: none;
-	display: inline-block;
-	text-align: center;
-}
-
 .profile {
 	display: inline-block;
 	margin: auto;
@@ -196,22 +176,18 @@ button:hover, button > a:hover{
 .avatar {
 	display: inline-block;
 }
-
 .avatar img {
 	border: 3px solid #000;
 	border-radius: 50%;
 }
-
 .bio {
 	display: inline-block;
-	color: #fff;
 }
-
-#about {
+#about, #team {
 	height: 500px;
 	position: relative;
 }
-#about:after{
+#about:after, #team:after{
     content: '';
     position: absolute;
     top: 0;
@@ -220,34 +196,34 @@ button:hover, button > a:hover{
     bottom: 0;
     opacity: 1;
     width: 100%;
-    height: 600px;
+    height: 500px;
     background: url('../images/toronto-skyline.jpg') no-repeat fixed;
     background-size: cover	;
     filter: blur(4px);
     -o-filter:blur(4px);
-      -ms-filter:blur(4px);
-      -moz-filter:blur(4px);
-      -webkit-filter:blur(4px);
-      z-index: -1;
-      opacity: 0.4;
+	-ms-filter:blur(4px);
+	-moz-filter:blur(4px);
+	-webkit-filter:blur(4px);
+	z-index: -1;
+	opacity: 0.4;
+ }
+#team:after{
+    background: url('../images/ocean.jpg') no-repeat fixed;
+    background-size: cover;
  }
  .content{
  	padding-top: 20px;
- 	margin: 100px 50px 20px 50px;
- 	background-color: rgba(138,95,32,0.2);
+ 	margin: 50px 50px 20px 50px;
  }
- #team {
- 	background-color: rgba(35,31,32,0.9);	
- 	padding-top: 30px;
- }
- #team .content {
- 	background: url('../images/background-content.png') no-repeat;
- 	background-size: 100%;
+ #team > .content {
+ 	height: 100%;
+ 	background-size: cover;
  	margin: 0;
- 	padding: 100px;
+ 	background-color: rgba(138,95,32,0.2);
+ 	padding: 30px 50px;
  }
- #team h4, #team p, #team h2, #team h3 {
- 	color: #fff;
+ #charlotte {
+ 	text-align: left;
  }
  #noorain {
  	text-align: right;
@@ -258,18 +234,20 @@ button:hover, button > a:hover{
 .box {
 	width: 200px;
 	height: 100px;
-	background-color: rgba(138,95,32,0.2);
+	background-color: rgba(138,95,32,0.1);
 	float: left;
-	margin: 0px 15px;
+	margin: 30px 15px;
+	border-top: 3px solid #b64926;
+	border-bottom: 3px solid #b64926;
 }
-.box-big {
-	border: 3px solid #468966;
-	margin:80px;
+.box h4 {
+	line-height: 100px;
+	margin: 0;
 }
 form {
 	text-align: center;
-	margin-bottom: 30px;
-	background-color: rgba(255,176,59,0.6);
+	margin-bottom: 0;
+	background-color: rgba(138,95,32,0.1);
 	padding: 20px;
 }
 form > input {
